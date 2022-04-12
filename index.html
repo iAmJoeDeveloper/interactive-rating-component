@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Raiting</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<section class="main">
+			<div id="card1" class="card1">
+				<div class="card1__img">
+					<img src="./images/icon-star.svg" alt="" />
+				</div>
+				<h1 class="card1__title">How did we do?</h1>
+				<p class="card1__text">
+					Please let us know how we did with your support request. All feedback is appreciated to
+					help us improve our offering!
+				</p>
+				<div class="container-numbers">
+					<button id="1" class="container-numbers__button">1</button>
+					<button id="2" class="container-numbers__button">2</button>
+					<button id="3" class="container-numbers__button">3</button>
+					<button id="4" class="container-numbers__button">4</button>
+					<button id="5" class="container-numbers__button">5</button>
+				</div>
+				<button type="submit" class="card1__submit" id="submit">SUBMIT</button>
+			</div>
+
+			<div id="card2" class="card2 card--hide">
+				<div class="card2__container-img">
+					<img class="card2__img" src="./images/illustration-thank-you.svg" alt="" />
+				</div>
+				<p class="card2__subtitle">You selected <span id="card2__score">4</span> out 5</p>
+				<h2 class="card2__title">Thank you!</h2>
+				<p class="card2__text">
+					We appreciate you taking the time to give a rating. If you ever need more support, don't
+					hesitate to get in touch!
+				</p>
+			</div>
+		</section>
+		<script src="./script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,242 @@
+:root {
+	--white: hsl(0, 0%, 100%);
+	--dark: hsl(216, 12%, 8%);
+	--darkLight: #222933;
+	--star: #262f38;
+	--text: hsl(217, 12%, 63%);
+	--submit: hsl(25, 97%, 53%);
+	--selected: hsl(217, 12%, 63%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Overpass', sans-serif;
+}
+
+body {
+	background-color: var(--dark);
+	color: var(--white);
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.card1 {
+	align-self: center;
+	width: 413px;
+	height: 413px;
+	padding: 20px 40px 35px 40px;
+	border-radius: 10%;
+	background: rgb(23, 30, 40);
+	background: linear-gradient(
+		30deg,
+		rgba(23, 30, 40, 1) 0%,
+		rgba(26, 33, 43, 1) 50%,
+		rgba(32, 39, 49, 1) 100%
+	);
+	overflow: hidden;
+}
+
+.card1__img {
+	height: 50px;
+	width: 50px;
+	padding: 20px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--star);
+}
+
+.card1__title {
+	font-size: 30px;
+	margin: 40px 0 25px 0;
+}
+
+.card1__text {
+	font-size: 1rem;
+	margin-bottom: 35px;
+	color: var(--text);
+}
+
+.container-numbers {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Buttons */
+.container-numbers__button {
+	width: 3rem;
+	height: 3rem;
+	border: none;
+	border-radius: 50%;
+	background-color: var(--star);
+	color: var(--text);
+	margin-bottom: 2rem;
+	cursor: pointer;
+}
+.container-numbers__button:hover {
+	transition-duration: 250ms;
+	background-color: var(--submit);
+	color: var(--white);
+}
+
+/* Class selected */
+.container-numbers .selected {
+	background-color: var(--selected);
+	color: var(--white);
+}
+
+.card1__submit {
+	width: 100%;
+	height: 45px;
+	color: var(--white);
+	border: none;
+	border-radius: 2rem;
+	background-color: var(--submit);
+	cursor: pointer;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+.card1__submit:hover {
+	transition-duration: 500ms;
+	background-color: var(--white);
+	color: var(--submit);
+}
+
+/*        */
+/* Card 2 */
+/*        */
+
+.card2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	width: 413px;
+	height: 413px;
+	padding: 45px 27px 55px 27px;
+	border-radius: 10%;
+	background: rgb(23, 30, 40);
+	background: linear-gradient(
+		30deg,
+		rgba(23, 30, 40, 1) 0%,
+		rgba(26, 33, 43, 1) 50%,
+		rgba(32, 39, 49, 1) 100%
+	);
+}
+
+.card2__container-img {
+	margin-bottom: 35px;
+}
+
+.card2__subtitle {
+	text-align: center;
+	color: var(--submit);
+	background-color: var(--darkLight);
+	border-radius: 20px;
+	padding: 10px;
+	width: 195px;
+}
+
+.card2__title {
+	font-size: 30px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+
+.card2__text {
+	text-align: center;
+	color: var(--text);
+}
+
+.card--hide {
+	display: none;
+}
+
+/*  */
+/*  */
+
+@media (max-width: 375px) {
+	.card1 {
+		width: 325px;
+		height: 360px;
+		padding: 15px 25px 35px 23px;
+		border-radius: 5%;
+	}
+
+	.card1__img {
+		height: 25px;
+		width: 25px;
+		margin-top: 10px;
+	}
+
+	.card1__title {
+		font-size: 22px;
+		margin: 18px 0 12px 0;
+	}
+
+	.card1__text {
+		font-size: 13px;
+		line-height: 23px;
+		margin-bottom: 25px;
+	}
+
+	.container-numbers__button {
+		width: 2.7rem;
+		height: 2.7rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.card1__submit {
+		font-size: 12px;
+	}
+
+	/*        */
+	/* Card 2 */
+	/*        */
+
+	.card2 {
+		width: 325px;
+		height: 360px;
+		padding: 35px 25px 35px 23px;
+		border-radius: 5%;
+	}
+
+	.card2__container-img {
+		margin-bottom: 20px;
+	}
+
+	.card2__img {
+		height: 95px;
+		width: auto;
+	}
+
+	.card2__subtitle {
+		width: 170px;
+		font-size: 14px;
+		padding: 8px;
+	}
+
+	.card2__title {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 23px;
+		font-weight: 700;
+	}
+
+	.card2__text {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
